@@ -1,0 +1,30 @@
+{
+  "name": "code-test-eigen",
+  "version": "1.0.0",
+  "description": "code test.",
+  "main": "index.js",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "prisma": "^5.18.0",
+    "supertest": "^7.0.0"
+  },
+  "scripts": {
+    "test": "mocha ./src/tests/*.test.js --timeout 10000"
+  },
+  "author": "Yusril Bagas Panji Pamukti",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-http": "^4.1.1",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
